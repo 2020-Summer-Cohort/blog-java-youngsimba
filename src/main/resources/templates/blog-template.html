@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/Styles.css">
+    <title>Title</title>
+</head>
+<body class="blog-body">
+<nav class="nav-bar">
+    <h3>Health of Gods</h3>
+    <a href="../home.html">Home</a>
+    <a href="../posts.html">All Posts</a>
+    <a href="../Categories.html">Categories</a>
+    <a href="Authors.html">Authors</a>
+    <a href="../tags.html">Tags</a>
+</nav>
+<body class="blog-body">
+<article>
+    <h1 th:text="${blog.blogTitle}">6 Benefits of Running</h1>
+    <h4 th:text="'Author: ' + ${blog.authorName}">Author: <a id="blog-link" href="../samuelBishara.html">Samuel Bishara</a></h4>
+    <br>
+    <h4 th:text="'Category: ' + ${blog.category}">Category: <a id="blog-link" href="../exerise.html">exercise</a></h4>
+    <br>
+    <h4 th:text="'Hashtags: ' + ${blog.hashtags}">Hashtags:</h4>
+    <a id="blog-link" href="../breakASweat.html">#breakasweat</a>
+    <div th:text="${blog.articleContent}" class="article-content">
+        <br>
+        <p>Everyone knows that running is a great way to get into shape, but it also can benefit almost
+            every part of your body and lift your mood. Whether it's your favorite part of the day or
+            something you have to push yourself through, the benefits are undeniable. The next time you're
+            thinking of skipping a run, think of these six reasons to get your butt out the door.</p>
+        <br>
+        <h3>1. Running Improves Your Health</h3>
+        <p>Believe it or not, running is actually a great way to increase your overall level of
+            health. Research shows that running can raise your levels of good cholesterol while
+            also helping you increase lung function and use. In addition, running can also boost
+            your immune system and lower your risk of developing blood clots.</p>
+        <br>
+        <h3>2. It Prevents Disease</h3>
+        <p>For women, running can actually help to lower your risk of breast cancer. It can also
+            help reduce the risk of having a stroke. Many doctors today recommend running for
+            people who are in the early stages of diabetes, high blood pressure, and osteoporosis,
+            and it is proven to help reduce the risk of having a heart attack. By helping the
+            arteries retain their elasticity and strengthening the heart, your chances of
+            suffering a heart attack can be significantly reduced.</p>
+        <br>
+        <h3>3. You Might Lose Weight</h3>
+        <p>Running is one of the best forms of exercise for losing or maintaining a consistent
+            weight. You will find that it is a leading way to burn off extra calories and that it
+            is the second most effective exercise in terms of calories burned per minute,
+            following only after cross country skiing.</p>
+        <br>
+        <h3>4. Running Boosts Your Confidence</h3>
+        <p>Not all of the benefits of running are physical. Running can provide an noticeable
+            boost to your confidence and self-esteem. By setting and achieving goals, you can
+            help give yourself a greater sense of empowerment that will leave you feeling much
+            happier.</p>
+        <br>
+        <h3>5. It Relieves Stress</h3>
+        <p>Stress can actually cause a number of health and mood problems. It can also diminish
+            appetite and sleep quality. When you run, you force your body to exert excess energy
+            and hormones. Running also helps to reduce your chances of developing tension headaches.</p>
+        <br>
+        <h3>6. Running has the Power to Eliminate Depression</h3>
+        <p>When you are depressed, the last thing you likely want to do is to get up and go for a
+            run. Yet you will find that after only a few minutes of running, your brain will start
+            to secrete hormones that naturally improve your mood. In fact, there are few things in
+            the world that can better or more rapidly treat depression than exercise such as running.</p>
+        <br>
+        <p>Running is incredibly beneficial to the body, mind and spirit. You will find that even
+            short runs can leave you feeling more energized, more focused and better able to enjoy
+            all that life has to offer.</p>
+    </div>
+</article>
+</body>
+</html>
