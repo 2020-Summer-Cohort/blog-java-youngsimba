@@ -17,7 +17,7 @@ public class AllPostsController {
 
     @RequestMapping("")
     public String showAllBlogs(Model model) {
-        model.addAttribute("blog", blogStorage.findAllBlogs());
+        model.addAttribute("blogs", blogStorage.findAllBlogs());
         return "allPosts-template";
     }
 }

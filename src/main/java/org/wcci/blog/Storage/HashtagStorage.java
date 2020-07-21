@@ -1,6 +1,7 @@
 package org.wcci.blog.Storage;
 
 import org.springframework.stereotype.Service;
+import org.wcci.blog.Entities.Category;
 import org.wcci.blog.Entities.Hashtag;
 import org.wcci.blog.Repositories.AuthorRepository;
 import org.wcci.blog.Repositories.HashtagRepository;
@@ -18,5 +19,8 @@ public class HashtagStorage {
 
     public Iterable<Hashtag> findAllHashtags(){
         return hashtagRepo.findAll();
+    }
+    public void addHashtag(Hashtag hashtag) {
+        hashtagRepo.save(hashtag);
     }
 }

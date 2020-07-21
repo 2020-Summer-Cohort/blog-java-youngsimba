@@ -20,4 +20,8 @@ public class CategoryStorage {
     public Iterable<Category> findAllCategories(){
         return categoryRepo.findAll();
     }
+
+    public void addCategory(Category category) {
+        categoryRepo.save(category);
+    }
 }

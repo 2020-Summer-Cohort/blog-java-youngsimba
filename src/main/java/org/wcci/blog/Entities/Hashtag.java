@@ -23,6 +23,10 @@ public class Hashtag {
         this.hashtagName = hashtagName;
     }
 
+    public Collection<Blog> getBlogs() {
+        return blogs;
+    }
+
     public String getHashtagName() {
         return hashtagName;
     }

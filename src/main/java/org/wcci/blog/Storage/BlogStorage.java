@@ -20,4 +20,7 @@ public class BlogStorage {
         return blogRepo.findAll();
     }
 
+    public void addBlog(Blog blog) {
+        blogRepo.save(blog);
+    }
 }

@@ -9,13 +9,13 @@
 <body class="main-pages-body">
 <nav class="nav-bar">
     <h3>Health of Gods</h3>
-    <a href="home.html">Home</a>
-    <a href="posts.html">All Posts</a>
-    <a href="Categories.html">Categories</a>
-    <a href="Authors.html">Authors</a>
-    <a href="tags.html">Tags</a>
+    <a href="../home.html">Home</a>
+    <a href="../posts.html">All Posts</a>
+    <a href="../Categories.html">Categories</a>
+    <a href="../Authors.html">Authors</a>
+    <a href="../tags.html">Tags</a>
 </nav>
-<ul th:each="${category.blogs}" class="all-lists">
+<ul th:each=" blog: ${category.blogs}" class="all-lists">
     <h2 th:text="${category.categoryName}':'">Diet:</h2>
     <br>
     <li><a th:text="${blog.blogTitle}" th:href="@{'blog/' + ${blog.blogTitle}}">A Guide to a Balanced Diet</a></li>

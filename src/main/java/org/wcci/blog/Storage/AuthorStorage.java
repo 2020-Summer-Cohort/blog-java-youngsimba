@@ -3,6 +3,7 @@ package org.wcci.blog.Storage;
 import org.springframework.stereotype.Service;
 
 import org.wcci.blog.Entities.Author;
+import org.wcci.blog.Entities.Category;
 import org.wcci.blog.Entities.Hashtag;
 import org.wcci.blog.Repositories.AuthorRepository;
 import org.wcci.blog.Repositories.BlogRepository;
@@ -21,5 +22,8 @@ public class AuthorStorage {
     }
     public Iterable<Author> findAllAuthors(){
         return authorRepo.findAll();
+    }
+    public void addAuthor(Author author) {
+        authorRepo.save(author);
     }
 }
